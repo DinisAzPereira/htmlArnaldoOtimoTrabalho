@@ -1,41 +1,54 @@
 /* Reset de estilos */
 body, html {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Estilos para a landing page */
-  .landing-page {
-    background-image: url('imagemINSANA.webp'); /* Substitua 'barbearia.jpg' pelo caminho da sua imagem de fundo */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .content {
-    text-align: center;
-    color: white; /* Cor do texto */
-  }
-  
-  .content h1 {
-    font-size: 3em; /* Tamanho do título */
-    margin-bottom: 10px;
-  }
-  
-  .content p {
-    font-size: 1.5em; /* Tamanho do texto */
-  }
-  
-  img {
-    width: 25%; /* Definindo a largura da imagem como 1/3 da largura original */
-    height: auto; /* Isso garante que a altura seja ajustada automaticamente de acordo com a largura */
-  }
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para a landing page */
+.landing-page {
+  background-image: url('imagemINSANA.webp'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Filtro preto na imagem da landing page */
+.landing-page::before { /* pseudo elemento before para que cria um elemento virtual antes da imagem da landing page */
+content: ""; /* Criando um pseudo-elemento para aplicar o filtro */
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+}
+
+.content {
+  text-align: center;
+  color: white; /* Cor do texto */
+  position: relative; /* Conteúdo fica sobre o filtro */
+}
+
+.content h1 {
+  font-size: 3em; /* Tamanho do título */
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.5em; /* Tamanho do texto */
+}
+
+img {
+  width: 25%; /* Definindo a largura da imagem como 1/3 da largura original */
+  height: auto; /* Isso garante que a altura seja ajustada automaticamente de acordo com a largura */
+}
 
 
-  h1 {
-    
+h1 {
+  
 
-  }
+}
