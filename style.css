@@ -47,8 +47,27 @@ img {
   height: auto; /* Isso garante que a altura seja ajustada automaticamente de acordo com a largura */
 }
 
+.btn.btn-outline-success.custom-button{
+  width: 20%;
+  height: auto;
+  border-width: 2px; /* Define a largura da borda como 2 pixels */
+  border-color: #676d54; /* Define a cor da borda como #676d54 */
+}
 
 h1 {
-  
-
+  font-family: 'Poetsen One', cursive;
 }
+
+
+.social-icon:hover {
+  cursor: pointer; /* Altera o cursor para um ponteiro ao passar o rato sobre o ícone */
+}
+#carouselExampleIndicators {
+  width: 25%; /* Definindo a largura do carousel */
+  margin: auto; /* Centralizando o carousel */
+}
+/* Ajuste do tamanho das imagens dentro do carousel */
+#carouselExampleIndicators img {
+  width: 100%; /* Cobrindo 100% da largura do carousel */
+}
+
