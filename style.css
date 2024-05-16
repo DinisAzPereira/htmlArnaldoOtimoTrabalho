@@ -13,18 +13,42 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
+/* Estilos para a seção "Sobre Nós" e o carousel */
+.container.py-4 {
+  padding-top: 50px; /* Adiciona um espaçamento superior */
+  display: flex;
+  justify-content: center;
+}
+
+.about-us, #carouselExampleControlsNoTouching {
+  width: 70%; /* Define a largura de ambos para ocupar 70% da página */
+}
+
+.about-us {
+  padding: 0 20px; /* Adiciona espaçamento interno nos lados */
+  margin-right: 20px; /* Adiciona margem à direita para separar do carousel */
+
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  height: 50vh;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Filtro preto na imagem da landing page */
 .landing-page::before { /* pseudo elemento before para que cria um elemento virtual antes da imagem da landing page */
-content: ""; /* Criando um pseudo-elemento para aplicar o filtro */
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+  content: ""; /* Criando um pseudo-elemento para aplicar o filtro */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
 }
 
 .content {
@@ -47,7 +71,7 @@ img {
   height: auto; /* Isso garante que a altura seja ajustada automaticamente de acordo com a largura */
 }
 
-.btn.btn-outline-success.custom-button{
+.btn.btn-outline-success.custom-button {
   width: 20%;
   height: auto;
   border-width: 2px; /* Define a largura da borda como 2 pixels */
@@ -58,16 +82,33 @@ h1 {
   font-family: 'Poetsen One', cursive;
 }
 
-
 .social-icon:hover {
   cursor: pointer; /* Altera o cursor para um ponteiro ao passar o rato sobre o ícone */
 }
-#carouselExampleIndicators {
-  width: 25%; /* Definindo a largura do carousel */
-  margin: auto; /* Centralizando o carousel */
+
+#carouselExampleControlsNoTouching {
+  width: 90%;
+  margin-top: 100px;
 }
+
 /* Ajuste do tamanho das imagens dentro do carousel */
 #carouselExampleIndicators img {
   width: 100%; /* Cobrindo 100% da largura do carousel */
+  
+
+  
 }
 
+
+
+.about-us h1{
+  margin-bottom: 20px;
+}
+
+.about-us h2 {
+  margin-bottom: 20px; /* Adiciona espaço inferior para separar do parágrafo */
+}
+
+.about-us p {
+  margin-bottom: 20px; /* Adiciona espaço inferior entre os parágrafos */
+}
