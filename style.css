@@ -14,6 +14,16 @@ body, html {
   align-items: center;
   justify-content: center;
 }
+.h2SobreNos{
+color: #555c3d;
+
+}
+
+.h1Andorinha{
+  color: #555c3d;
+
+
+}
 
 /* Estilos para a seção "Sobre Nós" e o carousel */
 .container.py-4 {
@@ -88,17 +98,15 @@ h1 {
 
 #carouselExampleControlsNoTouching {
   width: 90%;
-  margin-top: 100px;
+  background-color: #555c3d;
+  margin-top: 50px;
 }
 
 /* Ajuste do tamanho das imagens dentro do carousel */
 #carouselExampleIndicators img {
   width: 100%; /* Cobrindo 100% da largura do carousel */
-  
-
-  
+    
 }
-
 
 
 .about-us h1{
