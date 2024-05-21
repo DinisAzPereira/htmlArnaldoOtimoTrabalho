@@ -19,6 +19,12 @@
 <body>
 
   <div class="landing-page">
+     <div class="navbar">
+      <a href="galeria/galeria.html">Galeria</a>
+      <a href="contactus/contactus.html">Contato</a>
+      <a href="equipa/index.html">Equipa</a>
+
+    </div>
     <div class="content">
       <div class="logo-container">
         <img src="logoLandingInsano.webp" alt="Imagem não carregada">
@@ -42,7 +48,7 @@
       
       <h1 class="mt-4">ANDORINHA BARBERSHOP</h1>
       <p class="mt-4">- EST. 2022 -</p>
-      <button type="button" class="btn btn-outline-success custom-button" onclick="window.open('https://sites.appbarber.com.br/andorinhabarber-3tuo')">MARCAR</button>
+      <button type="button" class="btn btn-outline-success custom-button custom-button-white" onclick="window.open('https://sites.appbarber.com.br/andorinhabarber-3tuo')">MARCAR</button>
 
     
     </div>
@@ -54,58 +60,74 @@
 
 
   <section class="container py-4">
-
-  <div class="col-md-6">
-    <!-- Sobre Nós -->
-    <div class="about-us">
-      <h3 class="h2SobreNos">Sobre Nós</h3>
-      <h1 class="h1Andorinha"> ANDORINHA</h1>
-      <h1 class="h1Andorinha" >BARBERSHOP</h1>
-      <p>Fundada em 2022, a Andorinha Barbershop é o resultado da paixão compartilhada por dois experientes barbeiros que decidiram transformar suas visões em realidade. Desde então, nossa barbearia tem se tornado um refúgio para aqueles que procuram cortes de cabelo e barba excepcionais, com uma equipe dedicada e especializada.</p>
-      <button type="button" class="btn btn-outline-success custom-button" style=" width: 30%;
-      height: auto;
-      border-width: 2px; /* Define a largura da borda como 2 pixels */
-      border-color: #676d54; /* Define a cor da borda como #676d54 */
-      color: green; /* Define a cor do texto como branco */" onclick="window.open('https://sites.appbarber.com.br/andorinhabarber-3tuo')"> MARCAR</button>
-    </div>
-
-    
-  </div>
-  <div class="col-md-6"> <!--  grid bootstrap -->
-    <!-- Galeria de Imagens -->
-    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="imagem1.webp" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="imagem2.webp" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="imagem3.webp" class="d-block w-100" alt="...">
+    <div class="row">
+      <div class="col-md-6 col-sm-12   mb-4"> <!-- Use col-sm-12 para ocupar 12 colunas em telas pequenas -->
+        <div class="about-us">
+          <h3 class="h2SobreNos">Sobre Nós</h3>
+          <h1 class="h1Andorinha">ANDORINHA</h1>
+          <h1 class="h1Andorinha">BARBERSHOP</h1>
+          <p>Fundada em 2022, a Andorinha Barbershop é o resultado da paixão compartilhada por dois experientes barbeiros que decidiram transformar suas visões em realidade. Desde então, nossa barbearia tem se tornado um refúgio para aqueles que procuram cortes de cabelo e barba excepcionais, com uma equipe dedicada e especializada.</p>
+          <button type="button" class="btn btn-outline-success custom-button" onclick="window.open('https://sites.appbarber.com.br/andorinhabarber-3tuo')">MARCAR</button>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-
-      </button>
+      <div class="col-md-6 col-sm-12"> <!-- Use col-sm-12 para ocupar 12 colunas em telas pequenas -->
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagem1.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imagem2.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imagem3.webp" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </div>
-  </div>
-
-</section>
+  </section>
+  
 <div class="container-fluid background-image">
   <div class="row">
     <div class="col-md-12 text-center">
-      <h2>Outra Seção</h2>
-      <p>Conteúdo da nova seção aqui.</p>
+      <h2  >Nossos Valores</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" style="background-image: url('paixao.webp'); height: 200px;">
+            <div class="card-text">Paixão pela arte</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="background-image: url('dedicacao.webp'); height: 200px;">
+            <div class="card-text">Respeito e dedicação</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="background-image: url('coletivo.webp'); height: 200px;">
+            <div class="card-text">Coletivo</div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-outline-success custom-button mt-4">MARCAR</button>
+      <div class="andorinha-text mt-4">
+        <img src="andorinha.webp" alt="Andorinha" width="50" height="50">
+        <p>A andorinha, além de sua beleza, é conhecida por sua jornada anual, migrando de longas distâncias, retornando sempre ao seu lugar de origem. Na Andorinha Barbershop, vemos a andorinha como um símbolo de comprometimento e fidelidade. Assim como a andorinha retorna ao seu lar, fazemos votos que os nossos clientes voltem para receber o melhor do nosso atendimento.
+
+          .</p>
+      </div>
     </div>
   </div>
 </div>
+
 
 <footer>
   <p>&copy; 2024 Andorinha Barbershop. Todos os direitos reservados.</p>
